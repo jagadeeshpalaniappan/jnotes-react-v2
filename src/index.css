@@ -1,0 +1,45 @@
+:root {
+  --base: #cfcfcf;
+  --text: #212121;
+  color-scheme: dark light;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --base: #212121;
+    --text: #cfcfcf;
+  }
+}
+
+[data-theme='light'] {
+  color-scheme: light;
+  --base: #ffffff;
+  --text: #213547;
+}
+
+[data-theme='dark'] {
+  color-scheme: dark;
+  --base: #212121;
+  --text: #cfcfcf;
+}
+
+body {
+  color: var(--text);
+  background-color: var(--base);
+  font-family: system-ui;
+  margin: 0;
+  padding: 0;
+  /* border: 1px solid red; */
+}
+
+input,
+select {
+  font: inherit;
+}
+
+html,
+body,
+#root {
+  height: 100%;
+  /* min-height: 100vh; */
+}
