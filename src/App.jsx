@@ -17,17 +17,6 @@ import appHeaderStyles from './AppHeader.module.css';
 import appBodyStyles from './AppBody.module.css';
 import { ThemePicker } from './ThemePicker';
 
-function AppBody() {
-  const [count, setCount] = useState(0);
-  return (
-    <div className={appBodyStyles.root}>
-      <button onClick={() => setCount((count) => count + 1)}>
-        count is {count}
-      </button>
-    </div>
-  );
-}
-
 function AppNav() {
   return (
     <nav>

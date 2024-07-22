@@ -1,6 +1,7 @@
 :root {
   --bg1: #f2f2f2;
   --bg2: #cfcfcf;
+  --bg3: #eeeeee;
   --text: #212121;
   color-scheme: dark light;
 }
@@ -9,6 +10,7 @@
   :root {
     --bg1: #212121;
     --bg2: #000000;
+    --bg3: #111111;
     --text: #cfcfcf;
   }
 }
@@ -17,6 +19,7 @@
   color-scheme: light;
   --bg1: #ffffff;
   --bg2: #cfcfcf;
+  --bg3: #aaaaaa;
   --text: #213547;
 }
 
@@ -24,6 +27,7 @@
   color-scheme: dark;
   --bg1: #212121;
   --bg2: #000000;
+  --bg3: #111111;
   --text: #cfcfcf;
 }
 

@@ -22,7 +22,12 @@
   flex-shrink: 1;
   width: 200px;
   height: 100px;
-  border: 1px solid black;
+  border: 0;
   padding: 10px;
-  background-color: lightgreen;
+  opacity: 0.7;
+  background-color: var(--bg2);
+}
+
+.bookListItem:hover {
+  opacity: 1;
 }
