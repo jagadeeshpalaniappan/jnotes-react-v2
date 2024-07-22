@@ -18,5 +18,3 @@ import './index.css';
 import './2-state-management/3-using-zustand/index'; // using zustand, useMemo
 
 // import './2-state-management/4-using-preact-signals/index'; // using preact-signals
-
-import './3-react-router-v6/main';
