@@ -1,0 +1,11 @@
+.root {
+}
+
+.root label {
+  display: flex;
+  padding: 10px;
+}
+
+.root div {
+  display: flex;
+}

@@ -14,7 +14,11 @@ export function ThemePicker() {
   return (
     <label>
       Theme:
-      <select name="themePicker" onChange={handleThemeChange}>
+      <select
+        name="themePicker"
+        defaultValue="system"
+        onChange={handleThemeChange}
+      >
         <option value="system">System</option>
         <option value="light">Light</option>
         <option value="dark">Dark</option>

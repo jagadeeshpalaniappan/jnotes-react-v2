@@ -17,3 +17,11 @@
 .react.logo {
   height: 1rem;
 }
+
+.appNavList {
+  display: flex;
+}
+
+.appNavList > li {
+  margin: 10px;
+}

@@ -1,31 +1,35 @@
 :root {
-  --base: #cfcfcf;
+  --bg1: #f2f2f2;
+  --bg2: #cfcfcf;
   --text: #212121;
   color-scheme: dark light;
 }
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --base: #212121;
+    --bg1: #212121;
+    --bg2: #000000;
     --text: #cfcfcf;
   }
 }
 
 [data-theme='light'] {
   color-scheme: light;
-  --base: #ffffff;
+  --bg1: #ffffff;
+  --bg2: #cfcfcf;
   --text: #213547;
 }
 
 [data-theme='dark'] {
   color-scheme: dark;
-  --base: #212121;
+  --bg1: #212121;
+  --bg2: #000000;
   --text: #cfcfcf;
 }
 
 body {
   color: var(--text);
-  background-color: var(--base);
+  background-color: var(--bg1);
   font-family: system-ui;
   margin: 0;
   padding: 0;
@@ -42,4 +46,21 @@ body,
 #root {
   height: 100%;
   /* min-height: 100vh; */
+  overflow: hidden;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+ul li {
+  list-style-type: none;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  overflow: hidden;
 }

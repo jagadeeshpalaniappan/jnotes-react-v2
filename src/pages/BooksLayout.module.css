@@ -1,0 +1,10 @@
+.root {
+  display: flex;
+  height: 100%;
+  border: 1px solid green;
+}
+
+.sideNav {
+  min-width: 200px;
+  background-color: var(--bg2);
+}

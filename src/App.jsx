@@ -2,6 +2,12 @@ import { useState, useCallback, useEffect } from 'react';
 import { BrowserRouter, Routes, Route, Outlet, Link } from 'react-router-dom';
 
 import Home from './pages/Home';
+
+import BooksLayout from './pages/BooksLayout';
+import BookList from './pages/BookList';
+import Book from './pages/Book';
+import NewBook from './pages/NewBook';
+
 import Blogs from './pages/Blogs';
 import Contact from './pages/Contact';
 import NoPage from './pages/NoPage';
@@ -25,9 +31,12 @@ function AppBody() {
 function AppNav() {
   return (
     <nav>
-      <ul>
+      <ul className={appHeaderStyles.appNavList}>
         <li>
           <Link to="/">Home</Link>
+        </li>
+        <li>
+          <Link to="/books">Books</Link>
         </li>
         <li>
           <Link to="/blogs">Blogs</Link>
@@ -61,7 +70,9 @@ function AppLayout() {
   return (
     <>
       <AppHeader />
-      <Outlet />
+      <div className={appBodyStyles.root}>
+        <Outlet />
+      </div>
     </>
   );
 }
@@ -72,6 +83,13 @@ export function AppRoutes() {
       <Routes>
         <Route path="/" element={<AppLayout />}>
           <Route index element={<Home />} />
+
+          <Route path="/books" element={<BooksLayout />}>
+            <Route index element={<BookList />} />
+            <Route path=":id" element={<Book />} />
+            <Route path="new" element={<NewBook />} />
+          </Route>
+
           <Route path="blogs" element={<Blogs />} />
           <Route path="contact" element={<Contact />} />
           <Route path="*" element={<NoPage />} />
